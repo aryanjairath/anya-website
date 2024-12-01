@@ -1,36 +1,30 @@
-import { useState } from "react";
-import "@blueprintjs/core/lib/css/blueprint.css"; 
-import { Navbar } from "@blueprintjs/core";
+import React, { useState } from 'react';
+import { Navbar } from '@blueprintjs/core';
+import { Link } from 'react-router-dom';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import './hamburger.css';
 
 const Hamburger = () => {
-  const [activeNav, setActiveNav] = useState('#about');
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <section id="hamburger">
       <Navbar className="sticky-navbar">
-        <a 
-          href="#about" 
-          onClick={() => setActiveNav('#about')} 
-          className={activeNav === '#about' ? 'active' : ''}
-        >
-          About
-        </a>
-        <a 
-          href="#education" 
-          onClick={() => setActiveNav('#education')} 
-          className={activeNav === '#education' ? 'active' : ''}
-        >
-          Education
-        </a>
-        <a 
-          href="#work" 
-          onClick={() => setActiveNav('#work')} 
-          className={activeNav === '#work' ? 'active' : ''}
-        >
-          Work
-        </a>
-      </Navbar> 
+        <div className="menu-container">
+          <button className="hamburger-button" onClick={toggleMenu}>
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </button>
+          <ul className={`menu-links ${isOpen ? 'open' : ''}`}>
+            <li><Link to="/about" className="navbar-link">About</Link></li>
+            <li><Link to="/education" className="navbar-link">Education</Link></li>
+            <li><Link to="/work" className="navbar-link">Work</Link></li>
+          </ul>
+        </div>
+      </Navbar>
     </section>
   );
 };

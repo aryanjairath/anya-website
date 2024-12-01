@@ -1,12 +1,78 @@
+/* General Navbar Styles */
 .sticky-navbar {
-    position: fixed; /* Sticks the navbar to the top of the viewport */
-    top: 0; /* Aligns it to the top */
-    width: 100%; /* Ensures it spans the full width of the page */
-    z-index: 1000; /* Ensures it stays above other content */
-    background-color: #ffffff; /* Adds a solid background (optional) */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  position: fixed;
+  top: 0;
+  height: 2rem;
+  width: 100%;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-link {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: pink;
+}
+
+/* Responsive Menu Container */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hamburger Button (Visible on Small Screens) */
+.hamburger-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: darksalmon;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+/* Menu Links (Default Desktop View) */
+.menu-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Mobile Menu (Hidden by Default) */
+.menu-links.open {
+  display: flex;
+  flex-direction: column;
+  background-color: darksalmon;
+  position: absolute;
+  top: 20px;
+  right: 49px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-links li {
+  margin: 10px 0;
+}
+
+.menu-links.open a {
+  color: white;
+}
+
+/* Responsive Design: Show Hamburger Menu on Small Screens */
+@media (max-width: 768px) {
+  .menu-links {
+    display: none; /* Hide by default on small screens */
   }
-.sticky-navbar a{
-    font-size: 2.2rem;
-    margin: 1rem;
+
+  .hamburger-button {
+    display: flex; /* Show hamburger button */
+  }
 }

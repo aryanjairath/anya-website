@@ -1,0 +1,27 @@
+.text-bubble {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Default alignment for bubbles */
+    gap: 10px; /* Space between chat bubbles */
+    margin-top: 20px; /* Add some space above the chat bubbles */
+  }
+  
+  .user {
+    background-color: #0084ff; /* Blue bubble for the user */
+    color: white; /* White text for contrast */
+    padding: 10px 15px;
+    border-radius: 10px;
+    align-self: flex-end; /* Align bubble to the right */
+    max-width: 60%; /* Limit the width of the bubble */
+    margin-right: 12rem;
+  }
+  
+  .other {
+    background-color: #e5e5ea; /* Light gray bubble for others */
+    color: black; /* Black text for contrast */
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-left: 6rem;
+    align-self: flex-start; /* Align bubble to the left */
+    max-width: 60%; /* Limit the width of the bubble */
+  }  

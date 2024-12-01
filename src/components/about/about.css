@@ -1,11 +1,26 @@
 .about-container button{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin: 0.5rem;
     border-radius: 2rem;
-
+    background-color: lightblue;
 }
 .about-container button:hover{
     background-color: #ffecf2;
+    
 
 
+}
+.about-container{
+    display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+.button-link{
+    font-size: 1.7rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    border: 2px solid black; /* Set border color and thickness */
+    color: black;
+    background-color: lightblue;
+    text-decoration: none;
 }
