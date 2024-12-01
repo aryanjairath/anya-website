@@ -5,7 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FFB6C1;
 }
+h1{
+  font-size: 4rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Dancing Script', cursive;
+}
+button{
+  font-family: 'Dancing Script', cursive;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
