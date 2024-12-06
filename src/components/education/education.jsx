@@ -11,9 +11,9 @@ const Education = () => {
             <div className = "education-container">
                 {schools.map(item =>(
                     <div className="schoolbox">
-                        <h2>School: {item.name}</h2>
-                        <h2>Courses Taken: {item.courses}</h2>
-                        <h2>GPA: {item.GPA}</h2>
+                        <h3>School: {item.name}</h3>
+                        <h3>Courses Taken: {item.courses}</h3>
+                        <h3>GPA: {item.GPA}</h3>
                     </div>                
 
                 ))}

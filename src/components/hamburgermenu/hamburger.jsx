@@ -22,6 +22,8 @@ const Hamburger = () => {
             <li><Link to="/about" className="navbar-link">About</Link></li>
             <li><Link to="/education" className="navbar-link">Education</Link></li>
             <li><Link to="/work" className="navbar-link">Work</Link></li>
+            <li><Link to="/contact" className="navbar-link">Contact Me</Link></li>
+
           </ul>
         </div>
       </Navbar>

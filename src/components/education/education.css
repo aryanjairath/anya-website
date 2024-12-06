@@ -1,14 +1,16 @@
 .schoolbox {
-    background-color: #ADD8E6; /* Ensure contrasting background */
-    border: 2px solid black; /* Visible border */
-    padding: 20px; /* Add internal spacing */
-    border-radius: 10px; /* Optional rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-    text-align: center; /* Align text to the left */
-    width: 90%; /* Dynamically adjust width based on parent container */
-    margin: 1rem;
-    max-width: 500px; /* Optional: Set a maximum width */
-    box-sizing: border-box; /* Include padding and border in width/height */
+    background: linear-gradient(to bottom right, #ffd1dc, lightblue); /* Soft pink gradient */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 5rem;
+    min-height: 3rem;
+    padding: 4rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    display: flex; /* Enable flexbox for centering */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text */
 }
 .education-container{
     grid-template-columns: 1fr 1fr;

@@ -4,7 +4,7 @@
   top: 0;
   height: 2rem;
   width: 100%;
-  background-color: white;
+  background-color: #d8f9ff;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -22,34 +22,31 @@
   color: pink;
 }
 
-/* Responsive Menu Container */
 .menu-container {
   display: flex;
   flex-direction: column;
 }
 
-/* Hamburger Button (Visible on Small Screens) */
 .hamburger-button {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: darksalmon;
+  color: lightpink;
   cursor: pointer;
   display: none; /* Hidden by default */
 }
 
-/* Menu Links (Default Desktop View) */
 .menu-links {
   display: flex;
   list-style: none;
+  color: black;
   gap: 20px;
 }
 
-/* Mobile Menu (Hidden by Default) */
 .menu-links.open {
   display: flex;
   flex-direction: column;
-  background-color: darksalmon;
+  background-color: #d8f9ff;
   position: absolute;
   top: 20px;
   right: 49px;
@@ -63,13 +60,13 @@
 }
 
 .menu-links.open a {
-  color: white;
+  color: black;
 }
 
-/* Responsive Design: Show Hamburger Menu on Small Screens */
 @media (max-width: 768px) {
   .menu-links {
     display: none; /* Hide by default on small screens */
+
   }
 
   .hamburger-button {
