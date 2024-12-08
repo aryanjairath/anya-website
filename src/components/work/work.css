@@ -1,0 +1,18 @@
+.work-container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+.work-item{
+    width: 80%;
+
+}
+.title{
+    justify-content: center;
+    display: flex; 
+    color: lightblue;
+    -webkit-text-stroke: 3px black;
+
+}
+
