@@ -11,8 +11,8 @@
 .title{
     justify-content: center;
     display: flex; 
-    color: lightblue;
+    color: var(--gradient-start);
     -webkit-text-stroke: 3px black;
-
+    margin-bottom: -1rem;
 }
 

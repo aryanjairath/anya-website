@@ -24,3 +24,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --gradient-start: #ffd1dc;
+  --gradient-end: lightblue;
+  --text-color: #d81b60;
+  --logo-color: #ff69b4;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-shadow-color: rgba(0, 0, 0, 0.2);
+}

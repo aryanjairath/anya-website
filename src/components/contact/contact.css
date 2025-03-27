@@ -1,12 +1,14 @@
 .contact-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    align-items: center; 
 
 }
 
 .contact-item{
-    background: linear-gradient(to bottom right, #ffd1dc, lightblue);
+    background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
     margin: 5rem;
     min-height: 3rem;
@@ -16,9 +18,7 @@
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    justify-content: center; 
     text-align: center; 
-
 }
 .contact-item:hover {
     transform: scale(1.05); 

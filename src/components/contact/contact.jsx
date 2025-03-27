@@ -2,10 +2,12 @@ import './contact.css'
 import { BsInstagram } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
 import { BiPhoneIncoming } from 'react-icons/bi'
+import { FaLinkedin } from 'react-icons/fa'
 const Contact  = () => {
     const info = [
         {type: "Phone Number", mean: "tel:609-516-8577", actual: "609-516-8577", icon: BiPhoneIncoming},
         {type: "Email", mean: "mailto:anyajairath@gmail.com", actual : "anyajairath@gmail.com", icon: MdEmail},
+        {type: "LinkedIn", mean: "https://www.linkedin.com/in/anya-jairath-9bb45b26b/", actual: "@anya jairath", icon: FaLinkedin},
         {type: "Instagram/Messenger", mean: "https://www.instagram.com/anya_jairath/", actual: "@anya_jairath", icon: BsInstagram}
 
 
