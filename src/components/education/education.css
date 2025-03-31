@@ -21,8 +21,13 @@
 }
 
 @media (max-width: 768px) {
+    .schoolbox{
+        min-height: 0rem;
+        min-width: 0rem;
+    }
     .education-container {
       flex-direction: column; 
+      
     }
 
 }
