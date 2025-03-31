@@ -24,7 +24,7 @@ const Hamburger = () => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [setIsOpen]);
+  }, [setIsOpen, location]);
 
   return (
     <section id="hamburger">
