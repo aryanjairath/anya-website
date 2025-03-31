@@ -10,9 +10,9 @@
 .contact-item{
     background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
-    margin: 5rem;
-    min-height: 3rem;
-    padding: 6rem;
+    margin: 3rem;
+    min-height: 2rem;
+    padding: 4rem;
     border-radius: 2rem;
     font-size: 2rem;
     display: flex; 
@@ -22,6 +22,7 @@
 }
 .contact-item:hover {
     transform: scale(1.05); 
+    transition: transform 1s ease;
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); 
 }
 .contact-item a {
@@ -42,7 +43,8 @@
 
 @media (max-width: 768px) {
     .contact-container {
-      flex-direction: column; 
+        display: flex;
+        flex-direction: column; 
     }
 
 }

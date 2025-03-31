@@ -16,11 +16,5 @@
   align-items: center; /* Center vertically */
 }
 .button-link{
-    font-size: 1.7rem;
-    margin: 0.5rem;
-    border-radius: 2rem;
-    border: 2px solid black; /* Set border color and thickness */
-    color: black;
-    background-color: lightblue;
     text-decoration: none;
 }

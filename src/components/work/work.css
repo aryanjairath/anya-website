@@ -6,7 +6,9 @@
 
 .work-item{
     width: 80%;
-
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
 }
 .title{
     justify-content: center;

@@ -1,7 +1,7 @@
 import './education.css'
 const Education = () => {
     const schools = [
-        {name: "South Brunswick High School", courses: "AP Calculus-BC, AP Computer Science Principles, AP Environmental Science, College Accounting I/II", GPA: "4.1"},
+        {name: "Rutgers University", courses: "To be added", GPA: "N/A"},
         {name: "South Brunswick High School", courses: "AP Calculus-BC, AP Computer Science Principles, AP Environmental Science, College Accounting I/II", GPA: "4.1"}
 
     ];
