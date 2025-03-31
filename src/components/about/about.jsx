@@ -2,7 +2,6 @@ import './about.css'
 import './bubble.css'
 import Pdf from '../../assets/Resume (4).pdf'
 import Pic from '../../../src/assets/main-pic.jpeg';
-import { useState } from "react";
 import data from './textbubbledata'
 import { Link } from 'react-router-dom';
 
@@ -24,7 +23,7 @@ const About = () => {
               alignItems: 'center',
               justifyContent: 'center'
             }}>
-              <img src={Pic} style={{width:'25%', height: '25%', borderRadius:'1rem'}} />
+              <img src={Pic} alt = '' style={{width:'25%', height: '25%', borderRadius:'1rem'}} />
             </div>
 
             <div className="text-bubble">
